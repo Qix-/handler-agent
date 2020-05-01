@@ -1,10 +1,13 @@
 # `handler-agent`
 
-`handler-agent` creates a connection agent usable by most HTPT clients that
-executes an HTTP handler instead of creating a network connection.
+`handler-agent` creates a connection `http.Agent` usable by most HTTP clients that
+executes an HTTP handler (`function (req, res) { res.end('hi') }`) instead of
+creating a network connection.
 
 The returned agent can be used by `http.request()`, [`got`](https://npmjs.org/package/got),
 and most other Node.js HTTP clients that support the use of `http.Agent`s.
+
+This is primarily useful for testing HTTP APIs without touching the network.
 
 ## Usage
 
