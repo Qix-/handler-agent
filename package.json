@@ -1,0 +1,37 @@
+{
+  "name": "handler-agent",
+  "version": "0.1.0",
+  "description": "Zero-dependency (req,res) handler callback agent for use in client requests",
+  "main": "index.js",
+  "repository": "qix-/handler-agent",
+  "scripts": {
+    "test": "xo && best -v -I test/*.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "http",
+    "agent",
+    "server",
+    "api",
+    "tests",
+    "testing",
+    "tester",
+    "handler",
+    "rest",
+    "endpoint"
+  ],
+  "xo": {
+    "rules": {
+      "unicorn/prevent-abbreviations": 0
+    }
+  },
+  "author": "Josh Junon <josh@junon.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@zeit/best": "0.6.1",
+    "got": "11.0.3",
+    "xo": "0.30.0"
+  }
+}
