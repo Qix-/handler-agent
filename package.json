@@ -1,6 +1,6 @@
 {
   "name": "handler-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-dependency (req,res) handler callback agent for use in client requests",
   "main": "index.js",
   "repository": "qix-/handler-agent",
