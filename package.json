@@ -8,7 +8,8 @@
     "test": "xo && best -v -I test/*.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "http",
