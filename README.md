@@ -37,15 +37,13 @@ const got = require('got').extend({
 	}
 });
 
-got.get('http://localhost/')
-	.then(response => {
-		console.log('GET /: Got response:', response.body);
-	});
+got.get('http://localhost/').then(response => {
+	console.log('GET /: Got response:', response.body);
+});
 
-got.post('http://localhost/foo')
-	.catch(err => {
-		console.error('POST /foo:', err.stack);
-	});
+got.post('http://localhost/foo').catch(err => {
+	console.error('POST /foo:', err.stack);
+});
 ```
 
 Output:

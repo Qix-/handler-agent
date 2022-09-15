@@ -1,4 +1,4 @@
-import {Agent, IncomingMessage, ServerResponse} from 'http';
+import { Agent, IncomingMessage, ServerResponse } from 'node:http';
 
 declare function handlerAgent(
 	handler: (req: IncomingMessage, res: ServerResponse) => any

@@ -22,7 +22,7 @@ const makePipe = () => {
 		cb();
 	};
 
-	return {client, server};
+	return { client, server };
 };
 
 module.exports = handler => {
