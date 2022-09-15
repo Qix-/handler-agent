@@ -3,8 +3,6 @@ import { describe, it } from 'node:test';
 import got from 'got';
 import handlerAgent from '../index.cjs';
 
-const eq = assert.deepEqual;
-
 describe('basic (default) handler', () => {
 	it('should respond synchronously', async () => {
 		const { body, statusCode } = await got.get('http://localhost:80/', {
@@ -16,8 +14,8 @@ describe('basic (default) handler', () => {
 			}
 		});
 
-		eq(statusCode, 200);
-		eq(body, 'hello!');
+		assert.equal(statusCode, 200);
+		assert.equal(body, 'hello!');
 	});
 
 	it('should respond asynchronously', async () => {
@@ -31,7 +29,7 @@ describe('basic (default) handler', () => {
 			}
 		});
 
-		eq(statusCode, 200);
-		eq(body, 'hello!');
+		assert.equal(statusCode, 200);
+		assert.equal(body, 'hello!');
 	});
 });

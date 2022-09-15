@@ -5,7 +5,7 @@
 	"main": "index.cjs",
 	"repository": "qix-/handler-agent",
 	"scripts": {
-		"test": "node test/*.mjs",
+		"test": "find test -type f -name *.mjs | xargs -n1 node",
 		"format": "prettier --write --ignore-path .gitignore .",
 		"lint": "prettier --check --ignore-path .gitignore .",
 		"lint:commit": "commitlint -x @commitlint/config-conventional --edit",
