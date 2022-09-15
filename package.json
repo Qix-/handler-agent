@@ -2,10 +2,10 @@
 	"name": "handler-agent",
 	"version": "0.2.0",
 	"description": "Zero-dependency (req,res) handler callback agent for use in client requests",
-	"main": "index.js",
+	"main": "index.cjs",
 	"repository": "qix-/handler-agent",
 	"scripts": {
-		"test": "best -v -I test/*.js",
+		"test": "node test/*.mjs",
 		"format": "prettier --write --ignore-path .gitignore .",
 		"lint": "prettier --check --ignore-path .gitignore .",
 		"lint:commit": "commitlint -x @commitlint/config-conventional --edit",
@@ -33,7 +33,6 @@
 		"@commitlint/cli": "16.1.0",
 		"@commitlint/config-conventional": "16.0.0",
 		"@vercel/git-hooks": "1.0.0",
-		"@zeit/best": "0.6.1",
 		"got": "11.0.3",
 		"prettier": "2.5.1",
 		"pretty-quick": "3.1.3"
